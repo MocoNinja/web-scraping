@@ -14,7 +14,8 @@ class Link:
         self.name = name
 
     def describe(self, output=True):
-        msg = "Hola! Soy un Link de url: '{}' y nombre: '{}'...".format(self.url, self.name)
+        msg = "Hola! Soy un Link de url: '{}' y nombre: '{}'...".format(
+            self.url, self.name)
         if output:
             print(msg)
         return msg
