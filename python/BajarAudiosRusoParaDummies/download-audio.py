@@ -14,7 +14,7 @@ class Link:
         self.name = name
 
     def describe(self, output=True):
-        msg = "'{}' y nombre: '{}'...".format(self.url, self.name)
+        msg = "Hola! Soy un Link de url: '{}' y nombre: '{}'...".format(self.url, self.name)
         if output:
             print(msg)
         return msg
@@ -69,7 +69,7 @@ def prepare_path(pathname, output=True, destroyer=True):
     if not path.isdir(pathname):
         if output:
             print("El directorio {} no existe. Lo creo...".format(pathname))
-            mkdir(pathname)
+        mkdir(pathname)
     else:
         if output:
             print("El directorio {} ya existe...".format(pathname))
